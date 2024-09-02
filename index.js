@@ -30,21 +30,21 @@ async function cryptopriceScraper() {
         .forEach((row) => {
           const place =
             row.querySelector("td:nth-child(1)")?.innerText.trim() ||
-            "No Place";
+            "No Place"; // Adjust the selector based on your needs
           const number =
             row.querySelector("td:nth-child(2)")?.innerText.trim() ||
-            "No Number";
+            "No Number"; // Adjust the selector based on your needs
           const horse =
             row.querySelector("td:nth-child(3)")?.innerText.trim() ||
-            "No Horse";
+            "No Horse"; // Adjust the selector based on your needs
           const evQuota =
             row.querySelector("td:nth-child(4)")?.innerText.trim() ||
-            "No Ev. quota";
+            "No Ev. quota"; // Adjust the selector based on your needs
           const equestrian =
             row.querySelector("td:nth-child(5)")?.innerText.trim() ||
-            "No Equestrian";
+            "No Equestrian"; // Adjust the selector based on your needs
           const info =
-            row.querySelector("td:nth-child(6)")?.innerText.trim() || "No Info";
+            row.querySelector("td:nth-child(6)")?.innerText.trim() || "No Info"; // Adjust the selector based on your needs
 
           items.push({
             Place: place,
